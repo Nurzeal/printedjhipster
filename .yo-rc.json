@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "fr.inti.printed",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "Printed",
+    "packageName": "fr.inti.printed",
+    "packageFolder": "fr/inti/printed",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "rememberMeKey": "c430aaa8edc25573c7a0cf8926b6429506450ce413de14431ca6b04d031cc8004fca0d9cd101780a23c1fde2a6dbc0a50415",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"],
+    "blueprints": []
+  }
+}

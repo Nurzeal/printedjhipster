@@ -1,0 +1,11 @@
+version: '2'
+services:
+  printed-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/Printed/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Printed
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
