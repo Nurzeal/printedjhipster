@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark navbar-expand-md bg-dark">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span jhiTranslate="global.title" class="navbar-title">Printed</span> <span class="navbar-version">{{version}}</span>
+        <span jhiTranslate="global.title" class="navbar-title">Projetecommerce</span> <span class="navbar-version">{{version}}</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -16,6 +16,16 @@
                     </span>
                 </a>
             </li>
+            <a class="nav-link" routerLink="equipe" (click)="collapseNavbar()">
+                    <span>
+                        <span jhiTranslate="global.menu.page-equipe">Présentation équipe test</span>
+                    </span>
+            </a>
+            <a class="nav-link" routerLink="projet" (click)="collapseNavbar()">
+                    <span>
+                        <span jhiTranslate="global.menu.page-projet">Présentation projet test</span>
+                    </span>
+            </a>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">

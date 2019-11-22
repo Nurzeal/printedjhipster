@@ -5,6 +5,8 @@ import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
+import { PEquipeComponent } from './p-equipe/p-equipe.component';
+import { PProjetComponent } from './p-projet/p-projet.component';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
@@ -24,6 +26,9 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           path: 'account',
           loadChildren: () => import('./account/account.module').then(m => m.PrintedAccountModule)
         },
+        { path: 'projet', component: PProjetComponent },
+        { path: 'equipe', component: PEquipeComponent },
+
         ...LAYOUT_ROUTES
       ],
       { enableTracing: DEBUG_INFO_ENABLED }
