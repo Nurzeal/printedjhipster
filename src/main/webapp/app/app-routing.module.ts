@@ -7,6 +7,7 @@ import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 import { PEquipeComponent } from './p-equipe/p-equipe.component';
 import { PProjetComponent } from './p-projet/p-projet.component';
+import { PAcceuilComponent } from './p-acceuil/p-acceuil.component';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
@@ -28,6 +29,7 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         },
         { path: 'projet', component: PProjetComponent },
         { path: 'equipe', component: PEquipeComponent },
+        { path: 'acceuil', component: PAcceuilComponent },
 
         ...LAYOUT_ROUTES
       ],
